@@ -7,9 +7,20 @@
     <title>ChariteMax</title>
     <!-- mystyle -->
     <link rel="stylesheet" href="mystyle.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2074525eaa.js" crossorigin="anonymous"></script>
-    <!-- bootstrap cdnlink{css} -->
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" 
+
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+
+integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
+
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdnlink{css}  -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
     <!-- bootstrap cdn{js} -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
@@ -36,7 +47,59 @@
                 </div>
             </div>
         </div>
+
+        <script src="./NGO.js" defer></script>
+
+        <!-- initial header -->
+
         <div class="bottom-header">
+            <div class="top-first-nav">
+                <img src="../NGO/IMAGES/logo.png" alt="">
+                <div class="links">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"> home</a>
+                        <div class="dropdown-content">
+                            <a href="#">home1</a>
+                            <a href="#">home1</a>
+                        </div>  
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropbtn"> about us</a></li>
+                    <li class="dropdown"><a href="#" class="dropbtn"> events</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"> causes</a>
+                        <div class="dropdown-content">
+                            <a href="#">home1</a>
+                            <a href="#">home1</a>
+                        </div>  
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"> blog</a>
+                        <div class="dropdown-content">
+                            <a href="#">home1</a>
+                            <a href="#">home1</a>
+                        </div>  
+                    </li>
+
+                    <li class="dropdown"><a href="#" class="dropbtn"> contact</a></li>
+
+                    <i class="fa-solid fa-magnifying-glass dropbtn"></i>
+
+                    <!-- <li><a href="#" class="link"> about us</a></li>
+                    <a href="#" class="link"> event</a>
+                    <a href="#" class="link"> causes</a>
+                    <a href="#" class="link"> blog</a>
+                    <a href="#" class="link"> contact</a> -->
+                    <a href="#" class="btn-lnk">learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- sticky header -->
+
+        <div class="bottom-header three animate fade-In" id="back-to-top">
             <div class="top-first-nav">
                 <img src="../NGO/IMAGES/logo.png" alt="">
                 <div class="links">
@@ -530,6 +593,266 @@
             </div>
             
         </div>
+
+        
     </main>
+
+    <section class="sect2">
+        <div class="recent-causes">
+            <img src="../NGO/IMAGES/sec-title.png" alt="">
+            <h1 class="max">Volunteers <span class="green">Team</span></h1>
+            <p class="child">Orphan children are at high risk of severe malnutrition &amp; no education</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-1.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <i class="fa-brands fa-twitter" style="color: white;"></i>
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>scott wiliwams</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-2.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>liam irvines</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-3.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>Diana leslie</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-4.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>Tania Vandy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-1.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>scott wiliwams</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-2.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>liam irvines</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-3.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>Diana leslie</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-4.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>Tania Vandy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-1.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>scott wiliwams</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-2.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>liam irvines</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-3.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>Diana leslie</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" stle="border:1px solid black; margin: 10px;">
+                <div class="card" style="width: 100%;">
+                    <div class="cause-img">
+                        <div class="cause-img-cont">
+                            <img src="../NGO/IMAGES/team-4.jpg" class="image" alt="">
+                            <div class="overlay">
+                                <!-- <div class="overlay-txt">hello world</div> -->
+                            </div>
+                        </div>
+                        <div class="cause-txt">
+                            <p>volunteer</p>
+                            <h4>Tania Vandy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- owl carousel cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+        $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:true,
+      margin:10,
+      autoplay:true,
+      nav:true,
+      responsive:{
+        0:{
+          items:2
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:4
+        }
+      }
+    });
+
+  });
+        </script>
+    </section>
+
+    <fieldset class="help">
+        <section>
+            <div class="text-container">
+                <h1>We help thousands of children, <br>arrange food &amp; build houses for them</h1>
+                <h3 class="changee">
+                    Join us &amp; Become a Volunteer
+                     <span></span>
+                </h3>
+            </div>
+
+        </section>
+    </fieldset>
+
+    <article class="author">
+        
+        <div class="text-container">
+            <div class="author-pic">
+                <img src="./IMAGES/author.jpg" alt="">
+            </div>
+            <div class="author-about">
+                <p>Since vindictively over agile the some far well besides constructively well airy then one during with close excellent grabbed gosh contrary far dalmatian 
+                    upheld intrepid bought and toucan majestic more some apart dear boa much cast falcon a dwelled ouch busy.
+                </p>
+                <h5>Sande Well  <span>ChariteMax Donator</span></h5>
+            </div>
+          </div>
+    </article>
 </body>
 </html>

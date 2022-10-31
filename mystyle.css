@@ -35,6 +35,53 @@ a:hover{
     background-color: whitesmoke;
     padding: 15px 0;
 }
+#back-to-top{
+    display: none;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    /* animation-name: fadeInDown;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+    
+}
+.visible#back-to-top{
+    display: block;
+    /* animation: fadeIn 2s linaer 500ms 1 both; */
+    /* opacity: 1; */
+    z-index: 1000000;
+    /* transition: all 500ms ease; */
+}
+
+
+.fade-In {
+    animation: fadeIn 2s;
+    
+ }
+
+@keyframes fadeIn {
+    form {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+/*.three {
+    animation-delay: 2.3s;
+}
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;  
+    /* animation-timing-function: linear;
+    animation-iteration-count: 1; 
+}*/
 .fa-solid{
     color: #94c13d;
 }
@@ -383,6 +430,26 @@ main{
     position: relative;
 
 }
+.item .card .cause-img-cont{
+    position: relative;
+
+}
+.item .card .overlay{
+    position: absolute;
+    top: 99%;
+    background-color: #94c13d;
+    opacity: .8;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease-in;
+}
+.item .card .cause-img-cont:hover .overlay{
+    top: 0;
+    height: 100%;
+}
 .image{
     width: 100%;
     display: inline-block;
@@ -669,4 +736,102 @@ main{
 }
 .pay{
     text-align: left;
+}
+.owl-nav{
+    display: none;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background-color: #ffffff;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #94c13d !important;
+}
+.owl-theme .owl-dots .active span{
+    background-color: #94c13d !important;
+    color: #ffffff;
+}
+.cause-txt h4{
+    text-transform:capitalize;
+}
+.help{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../NGO/IMAGES/background/3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 95px 0 76px;
+}
+.help section{
+    position: relative;
+}
+.text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-container h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+}
+.changee{
+    position:relative;
+    color: #94c13d;
+    font-size: 24px;
+    line-height: 1.2em;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    font-family: PonyTale;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+.changee::before, .changee::after{
+    color: #94c13d;
+    background-color: #94c13d;
+}
+.changee span::after, .changee span::before{
+    color: #94c13d;
+    background-color: #94c13d;
+}
+.author{
+    position: relative;
+    background-color: #f7f9f3;
+    /* padding: 100px 0; */
+    border: 1px solid black;
+    /* height: 500px; */
+}
+.author .text-container{
+    margin: 150px 0;
+    
+}
+.author-pic{
+    margin-top: 20px;
+    /* position: relative;
+    border-radius: 50%; */
+}
+/* .author-pic::before{
+    position: absolute;
+    color: #94c13d;
+    font-family: 'flaticon';
+    content: "\f145";
+    top: 30px;
+    left: -80px;
+    font-size: 30px;
+} */
+.author-about p{
+    margin: 20px 0;
+}
+.author-about h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 5px;
+}
+.author-about span{
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 400;
 }
